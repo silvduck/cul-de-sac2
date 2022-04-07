@@ -1,0 +1,1461 @@
+{
+  "vulnerabilities": [
+    {
+      "title": "HTTP Request Smuggling",
+      "credit": [
+        ""
+      ],
+      "packageName": "apache2",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `apache2` package._\n\nApache HTTP Server versions 2.4.6 to 2.4.46 mod_proxy_wstunnel configured on an URL that is not necessarily Upgraded by the origin server was tunneling the whole connection regardless, thus allowing for subsequent requests on the same connection to pass through with no HTTP validation, authentication or authorization possibly configured.\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `apache2`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-17567)\n- [CONFIRM](http://httpd.apache.org/security/vulnerabilities_24.html)\n- [CONFIRM](https://lists.apache.org/thread.html/re026d3da9d7824bd93b9f871c0fdda978d960c7e62d8c43cba8d0bf3%40%3Ccvs.httpd.apache.org%3E)\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210702-0001/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SPBR6WUYBJNACHKE65SPL7TJOHX7RHWD/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZNCYSR3BXT36FFF4XTCPL3HDQK4VP45R/)\n- [GENTOO](https://security.gentoo.org/glsa/202107-38)\n- [MISC](https://www.oracle.com/security-alerts/cpuoct2021.html)\n- [MLIST](https://lists.apache.org/thread.html/r7f2b70b621651548f4b6f027552f1dd91705d7111bb5d15cda0a68dd@%3Cdev.httpd.apache.org%3E)\n- [MLIST](https://lists.apache.org/thread.html/r90f693a5c9fb75550ef1412436d5e682a5f845beb427fa6f23419a3c@%3Cannounce.httpd.apache.org%3E)\n- [MLIST](http://www.openwall.com/lists/oss-security/2021/06/10/2)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2019-17567"
+        ],
+        "CWE": [
+          "CWE-444"
+        ]
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 5.3,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "patches": [],
+      "references": [
+        {
+          "title": "ADVISORY",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2019-17567"
+        },
+        {
+          "title": "CONFIRM",
+          "url": "http://httpd.apache.org/security/vulnerabilities_24.html"
+        },
+        {
+          "title": "CONFIRM",
+          "url": "https://lists.apache.org/thread.html/re026d3da9d7824bd93b9f871c0fdda978d960c7e62d8c43cba8d0bf3%40%3Ccvs.httpd.apache.org%3E"
+        },
+        {
+          "title": "CONFIRM",
+          "url": "https://security.netapp.com/advisory/ntap-20210702-0001/"
+        },
+        {
+          "title": "FEDORA",
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SPBR6WUYBJNACHKE65SPL7TJOHX7RHWD/"
+        },
+        {
+          "title": "FEDORA",
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZNCYSR3BXT36FFF4XTCPL3HDQK4VP45R/"
+        },
+        {
+          "title": "GENTOO",
+          "url": "https://security.gentoo.org/glsa/202107-38"
+        },
+        {
+          "title": "MISC",
+          "url": "https://www.oracle.com/security-alerts/cpuoct2021.html"
+        },
+        {
+          "title": "MLIST",
+          "url": "https://lists.apache.org/thread.html/r7f2b70b621651548f4b6f027552f1dd91705d7111bb5d15cda0a68dd@%3Cdev.httpd.apache.org%3E"
+        },
+        {
+          "title": "MLIST",
+          "url": "https://lists.apache.org/thread.html/r90f693a5c9fb75550ef1412436d5e682a5f845beb427fa6f23419a3c@%3Cannounce.httpd.apache.org%3E"
+        },
+        {
+          "title": "MLIST",
+          "url": "http://www.openwall.com/lists/oss-security/2021/06/10/2"
+        }
+      ],
+      "creationTime": "2021-06-11T03:31:49.906618Z",
+      "modificationTime": "2022-02-07T14:18:09.024030Z",
+      "publicationTime": "2021-06-16T03:31:08.804668Z",
+      "disclosureTime": "2021-06-10T07:15:00Z",
+      "id": "SNYK-UBUNTU2004-APACHE2-1303376",
+      "malicious": false,
+      "nvdSeverity": "medium",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "apache2/apache2-utils@2.4.41-4ubuntu3.10"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "apache2/apache2-utils",
+      "version": "2.4.41-4ubuntu3.10",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "HTTP Request Smuggling",
+      "credit": [
+        ""
+      ],
+      "packageName": "nginx",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `nginx` package._\n\nAn issue was discovered in OpenResty before 1.15.8.4. ngx_http_lua_subrequest.c allows HTTP request smuggling, as demonstrated by the ngx.location.capture API.\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `nginx`.\n## References\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210129-0002/)\n- [DEBIAN](https://www.debian.org/security/2020/dsa-4750)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2020-11724)\n- [MISC](https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa)\n- [MISC](https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2020-11724"
+        ],
+        "CWE": [
+          "CWE-444"
+        ]
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 7.5,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "patches": [],
+      "references": [
+        {
+          "title": "CONFIRM",
+          "url": "https://security.netapp.com/advisory/ntap-20210129-0002/"
+        },
+        {
+          "title": "DEBIAN",
+          "url": "https://www.debian.org/security/2020/dsa-4750"
+        },
+        {
+          "title": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2020-11724"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch"
+        },
+        {
+          "title": "MLIST",
+          "url": "https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html"
+        },
+        {
+          "title": "Ubuntu CVE Tracker",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724"
+        }
+      ],
+      "creationTime": "2020-09-10T10:04:23.812730Z",
+      "modificationTime": "2022-02-07T14:20:38.680054Z",
+      "publicationTime": "2020-04-13T21:52:24.585482Z",
+      "disclosureTime": "2020-04-12T21:15:00Z",
+      "id": "SNYK-UBUNTU2004-NGINX-579011",
+      "malicious": false,
+      "nvdSeverity": "high",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "nginx@1.18.0-0ubuntu1.2",
+        "nginx/nginx-core@1.18.0-0ubuntu1.2",
+        "nginx/nginx-common@1.18.0-0ubuntu1.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "nginx/nginx-common",
+      "version": "1.18.0-0ubuntu1.2",
+      "dockerfileInstruction": "apt-get install -y nginx",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "HTTP Request Smuggling",
+      "credit": [
+        ""
+      ],
+      "packageName": "nginx",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `nginx` package._\n\nAn issue was discovered in OpenResty before 1.15.8.4. ngx_http_lua_subrequest.c allows HTTP request smuggling, as demonstrated by the ngx.location.capture API.\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `nginx`.\n## References\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210129-0002/)\n- [DEBIAN](https://www.debian.org/security/2020/dsa-4750)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2020-11724)\n- [MISC](https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa)\n- [MISC](https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2020-11724"
+        ],
+        "CWE": [
+          "CWE-444"
+        ]
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 7.5,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "patches": [],
+      "references": [
+        {
+          "title": "CONFIRM",
+          "url": "https://security.netapp.com/advisory/ntap-20210129-0002/"
+        },
+        {
+          "title": "DEBIAN",
+          "url": "https://www.debian.org/security/2020/dsa-4750"
+        },
+        {
+          "title": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2020-11724"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch"
+        },
+        {
+          "title": "MLIST",
+          "url": "https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html"
+        },
+        {
+          "title": "Ubuntu CVE Tracker",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724"
+        }
+      ],
+      "creationTime": "2020-09-10T10:04:23.812730Z",
+      "modificationTime": "2022-02-07T14:20:38.680054Z",
+      "publicationTime": "2020-04-13T21:52:24.585482Z",
+      "disclosureTime": "2020-04-12T21:15:00Z",
+      "id": "SNYK-UBUNTU2004-NGINX-579011",
+      "malicious": false,
+      "nvdSeverity": "high",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "nginx@1.18.0-0ubuntu1.2",
+        "nginx/nginx-core@1.18.0-0ubuntu1.2",
+        "nginx/libnginx-mod-http-image-filter@1.18.0-0ubuntu1.2",
+        "nginx/nginx-common@1.18.0-0ubuntu1.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "nginx/nginx-common",
+      "version": "1.18.0-0ubuntu1.2",
+      "dockerfileInstruction": "apt-get install -y nginx",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "HTTP Request Smuggling",
+      "credit": [
+        ""
+      ],
+      "packageName": "nginx",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `nginx` package._\n\nAn issue was discovered in OpenResty before 1.15.8.4. ngx_http_lua_subrequest.c allows HTTP request smuggling, as demonstrated by the ngx.location.capture API.\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `nginx`.\n## References\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210129-0002/)\n- [DEBIAN](https://www.debian.org/security/2020/dsa-4750)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2020-11724)\n- [MISC](https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa)\n- [MISC](https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2020-11724"
+        ],
+        "CWE": [
+          "CWE-444"
+        ]
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 7.5,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "patches": [],
+      "references": [
+        {
+          "title": "CONFIRM",
+          "url": "https://security.netapp.com/advisory/ntap-20210129-0002/"
+        },
+        {
+          "title": "DEBIAN",
+          "url": "https://www.debian.org/security/2020/dsa-4750"
+        },
+        {
+          "title": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2020-11724"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch"
+        },
+        {
+          "title": "MLIST",
+          "url": "https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html"
+        },
+        {
+          "title": "Ubuntu CVE Tracker",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724"
+        }
+      ],
+      "creationTime": "2020-09-10T10:04:23.812730Z",
+      "modificationTime": "2022-02-07T14:20:38.680054Z",
+      "publicationTime": "2020-04-13T21:52:24.585482Z",
+      "disclosureTime": "2020-04-12T21:15:00Z",
+      "id": "SNYK-UBUNTU2004-NGINX-579011",
+      "malicious": false,
+      "nvdSeverity": "high",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "nginx@1.18.0-0ubuntu1.2",
+        "nginx/nginx-core@1.18.0-0ubuntu1.2",
+        "nginx/libnginx-mod-http-xslt-filter@1.18.0-0ubuntu1.2",
+        "nginx/nginx-common@1.18.0-0ubuntu1.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "nginx/nginx-common",
+      "version": "1.18.0-0ubuntu1.2",
+      "dockerfileInstruction": "apt-get install -y nginx",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "HTTP Request Smuggling",
+      "credit": [
+        ""
+      ],
+      "packageName": "nginx",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `nginx` package._\n\nAn issue was discovered in OpenResty before 1.15.8.4. ngx_http_lua_subrequest.c allows HTTP request smuggling, as demonstrated by the ngx.location.capture API.\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `nginx`.\n## References\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210129-0002/)\n- [DEBIAN](https://www.debian.org/security/2020/dsa-4750)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2020-11724)\n- [MISC](https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa)\n- [MISC](https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2020-11724"
+        ],
+        "CWE": [
+          "CWE-444"
+        ]
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 7.5,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "patches": [],
+      "references": [
+        {
+          "title": "CONFIRM",
+          "url": "https://security.netapp.com/advisory/ntap-20210129-0002/"
+        },
+        {
+          "title": "DEBIAN",
+          "url": "https://www.debian.org/security/2020/dsa-4750"
+        },
+        {
+          "title": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2020-11724"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch"
+        },
+        {
+          "title": "MLIST",
+          "url": "https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html"
+        },
+        {
+          "title": "Ubuntu CVE Tracker",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724"
+        }
+      ],
+      "creationTime": "2020-09-10T10:04:23.812730Z",
+      "modificationTime": "2022-02-07T14:20:38.680054Z",
+      "publicationTime": "2020-04-13T21:52:24.585482Z",
+      "disclosureTime": "2020-04-12T21:15:00Z",
+      "id": "SNYK-UBUNTU2004-NGINX-579011",
+      "malicious": false,
+      "nvdSeverity": "high",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "nginx@1.18.0-0ubuntu1.2",
+        "nginx/nginx-core@1.18.0-0ubuntu1.2",
+        "nginx/libnginx-mod-mail@1.18.0-0ubuntu1.2",
+        "nginx/nginx-common@1.18.0-0ubuntu1.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "nginx/nginx-common",
+      "version": "1.18.0-0ubuntu1.2",
+      "dockerfileInstruction": "apt-get install -y nginx",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "HTTP Request Smuggling",
+      "credit": [
+        ""
+      ],
+      "packageName": "nginx",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `nginx` package._\n\nAn issue was discovered in OpenResty before 1.15.8.4. ngx_http_lua_subrequest.c allows HTTP request smuggling, as demonstrated by the ngx.location.capture API.\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `nginx`.\n## References\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210129-0002/)\n- [DEBIAN](https://www.debian.org/security/2020/dsa-4750)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2020-11724)\n- [MISC](https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa)\n- [MISC](https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2020-11724"
+        ],
+        "CWE": [
+          "CWE-444"
+        ]
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 7.5,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "patches": [],
+      "references": [
+        {
+          "title": "CONFIRM",
+          "url": "https://security.netapp.com/advisory/ntap-20210129-0002/"
+        },
+        {
+          "title": "DEBIAN",
+          "url": "https://www.debian.org/security/2020/dsa-4750"
+        },
+        {
+          "title": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2020-11724"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch"
+        },
+        {
+          "title": "MLIST",
+          "url": "https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html"
+        },
+        {
+          "title": "Ubuntu CVE Tracker",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724"
+        }
+      ],
+      "creationTime": "2020-09-10T10:04:23.812730Z",
+      "modificationTime": "2022-02-07T14:20:38.680054Z",
+      "publicationTime": "2020-04-13T21:52:24.585482Z",
+      "disclosureTime": "2020-04-12T21:15:00Z",
+      "id": "SNYK-UBUNTU2004-NGINX-579011",
+      "malicious": false,
+      "nvdSeverity": "high",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "nginx@1.18.0-0ubuntu1.2",
+        "nginx/nginx-core@1.18.0-0ubuntu1.2",
+        "nginx/libnginx-mod-stream@1.18.0-0ubuntu1.2",
+        "nginx/nginx-common@1.18.0-0ubuntu1.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "nginx/nginx-common",
+      "version": "1.18.0-0ubuntu1.2",
+      "dockerfileInstruction": "apt-get install -y nginx",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "HTTP Request Smuggling",
+      "credit": [
+        ""
+      ],
+      "packageName": "nginx",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `nginx` package._\n\nAn issue was discovered in OpenResty before 1.15.8.4. ngx_http_lua_subrequest.c allows HTTP request smuggling, as demonstrated by the ngx.location.capture API.\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `nginx`.\n## References\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210129-0002/)\n- [DEBIAN](https://www.debian.org/security/2020/dsa-4750)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2020-11724)\n- [MISC](https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa)\n- [MISC](https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2020-11724"
+        ],
+        "CWE": [
+          "CWE-444"
+        ]
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 7.5,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "patches": [],
+      "references": [
+        {
+          "title": "CONFIRM",
+          "url": "https://security.netapp.com/advisory/ntap-20210129-0002/"
+        },
+        {
+          "title": "DEBIAN",
+          "url": "https://www.debian.org/security/2020/dsa-4750"
+        },
+        {
+          "title": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2020-11724"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch"
+        },
+        {
+          "title": "MLIST",
+          "url": "https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html"
+        },
+        {
+          "title": "Ubuntu CVE Tracker",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724"
+        }
+      ],
+      "creationTime": "2020-09-10T10:04:23.812730Z",
+      "modificationTime": "2022-02-07T14:20:38.680054Z",
+      "publicationTime": "2020-04-13T21:52:24.585482Z",
+      "disclosureTime": "2020-04-12T21:15:00Z",
+      "id": "SNYK-UBUNTU2004-NGINX-579011",
+      "malicious": false,
+      "nvdSeverity": "high",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "nginx@1.18.0-0ubuntu1.2",
+        "nginx/nginx-core@1.18.0-0ubuntu1.2",
+        "nginx/libnginx-mod-http-image-filter@1.18.0-0ubuntu1.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "nginx/libnginx-mod-http-image-filter",
+      "version": "1.18.0-0ubuntu1.2",
+      "dockerfileInstruction": "apt-get install -y nginx",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "HTTP Request Smuggling",
+      "credit": [
+        ""
+      ],
+      "packageName": "nginx",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `nginx` package._\n\nAn issue was discovered in OpenResty before 1.15.8.4. ngx_http_lua_subrequest.c allows HTTP request smuggling, as demonstrated by the ngx.location.capture API.\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `nginx`.\n## References\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210129-0002/)\n- [DEBIAN](https://www.debian.org/security/2020/dsa-4750)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2020-11724)\n- [MISC](https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa)\n- [MISC](https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2020-11724"
+        ],
+        "CWE": [
+          "CWE-444"
+        ]
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 7.5,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "patches": [],
+      "references": [
+        {
+          "title": "CONFIRM",
+          "url": "https://security.netapp.com/advisory/ntap-20210129-0002/"
+        },
+        {
+          "title": "DEBIAN",
+          "url": "https://www.debian.org/security/2020/dsa-4750"
+        },
+        {
+          "title": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2020-11724"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch"
+        },
+        {
+          "title": "MLIST",
+          "url": "https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html"
+        },
+        {
+          "title": "Ubuntu CVE Tracker",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724"
+        }
+      ],
+      "creationTime": "2020-09-10T10:04:23.812730Z",
+      "modificationTime": "2022-02-07T14:20:38.680054Z",
+      "publicationTime": "2020-04-13T21:52:24.585482Z",
+      "disclosureTime": "2020-04-12T21:15:00Z",
+      "id": "SNYK-UBUNTU2004-NGINX-579011",
+      "malicious": false,
+      "nvdSeverity": "high",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "nginx@1.18.0-0ubuntu1.2",
+        "nginx/nginx-core@1.18.0-0ubuntu1.2",
+        "nginx/libnginx-mod-http-xslt-filter@1.18.0-0ubuntu1.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "nginx/libnginx-mod-http-xslt-filter",
+      "version": "1.18.0-0ubuntu1.2",
+      "dockerfileInstruction": "apt-get install -y nginx",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "HTTP Request Smuggling",
+      "credit": [
+        ""
+      ],
+      "packageName": "nginx",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `nginx` package._\n\nAn issue was discovered in OpenResty before 1.15.8.4. ngx_http_lua_subrequest.c allows HTTP request smuggling, as demonstrated by the ngx.location.capture API.\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `nginx`.\n## References\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210129-0002/)\n- [DEBIAN](https://www.debian.org/security/2020/dsa-4750)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2020-11724)\n- [MISC](https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa)\n- [MISC](https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2020-11724"
+        ],
+        "CWE": [
+          "CWE-444"
+        ]
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 7.5,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "patches": [],
+      "references": [
+        {
+          "title": "CONFIRM",
+          "url": "https://security.netapp.com/advisory/ntap-20210129-0002/"
+        },
+        {
+          "title": "DEBIAN",
+          "url": "https://www.debian.org/security/2020/dsa-4750"
+        },
+        {
+          "title": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2020-11724"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch"
+        },
+        {
+          "title": "MLIST",
+          "url": "https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html"
+        },
+        {
+          "title": "Ubuntu CVE Tracker",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724"
+        }
+      ],
+      "creationTime": "2020-09-10T10:04:23.812730Z",
+      "modificationTime": "2022-02-07T14:20:38.680054Z",
+      "publicationTime": "2020-04-13T21:52:24.585482Z",
+      "disclosureTime": "2020-04-12T21:15:00Z",
+      "id": "SNYK-UBUNTU2004-NGINX-579011",
+      "malicious": false,
+      "nvdSeverity": "high",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "nginx@1.18.0-0ubuntu1.2",
+        "nginx/nginx-core@1.18.0-0ubuntu1.2",
+        "nginx/libnginx-mod-mail@1.18.0-0ubuntu1.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "nginx/libnginx-mod-mail",
+      "version": "1.18.0-0ubuntu1.2",
+      "dockerfileInstruction": "apt-get install -y nginx",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "HTTP Request Smuggling",
+      "credit": [
+        ""
+      ],
+      "packageName": "nginx",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `nginx` package._\n\nAn issue was discovered in OpenResty before 1.15.8.4. ngx_http_lua_subrequest.c allows HTTP request smuggling, as demonstrated by the ngx.location.capture API.\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `nginx`.\n## References\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210129-0002/)\n- [DEBIAN](https://www.debian.org/security/2020/dsa-4750)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2020-11724)\n- [MISC](https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa)\n- [MISC](https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2020-11724"
+        ],
+        "CWE": [
+          "CWE-444"
+        ]
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 7.5,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "patches": [],
+      "references": [
+        {
+          "title": "CONFIRM",
+          "url": "https://security.netapp.com/advisory/ntap-20210129-0002/"
+        },
+        {
+          "title": "DEBIAN",
+          "url": "https://www.debian.org/security/2020/dsa-4750"
+        },
+        {
+          "title": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2020-11724"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch"
+        },
+        {
+          "title": "MLIST",
+          "url": "https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html"
+        },
+        {
+          "title": "Ubuntu CVE Tracker",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724"
+        }
+      ],
+      "creationTime": "2020-09-10T10:04:23.812730Z",
+      "modificationTime": "2022-02-07T14:20:38.680054Z",
+      "publicationTime": "2020-04-13T21:52:24.585482Z",
+      "disclosureTime": "2020-04-12T21:15:00Z",
+      "id": "SNYK-UBUNTU2004-NGINX-579011",
+      "malicious": false,
+      "nvdSeverity": "high",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "nginx@1.18.0-0ubuntu1.2",
+        "nginx/nginx-core@1.18.0-0ubuntu1.2",
+        "nginx/libnginx-mod-stream@1.18.0-0ubuntu1.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "nginx/libnginx-mod-stream",
+      "version": "1.18.0-0ubuntu1.2",
+      "dockerfileInstruction": "apt-get install -y nginx",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "HTTP Request Smuggling",
+      "credit": [
+        ""
+      ],
+      "packageName": "nginx",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `nginx` package._\n\nAn issue was discovered in OpenResty before 1.15.8.4. ngx_http_lua_subrequest.c allows HTTP request smuggling, as demonstrated by the ngx.location.capture API.\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `nginx`.\n## References\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210129-0002/)\n- [DEBIAN](https://www.debian.org/security/2020/dsa-4750)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2020-11724)\n- [MISC](https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa)\n- [MISC](https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2020-11724"
+        ],
+        "CWE": [
+          "CWE-444"
+        ]
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 7.5,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "patches": [],
+      "references": [
+        {
+          "title": "CONFIRM",
+          "url": "https://security.netapp.com/advisory/ntap-20210129-0002/"
+        },
+        {
+          "title": "DEBIAN",
+          "url": "https://www.debian.org/security/2020/dsa-4750"
+        },
+        {
+          "title": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2020-11724"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch"
+        },
+        {
+          "title": "MLIST",
+          "url": "https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html"
+        },
+        {
+          "title": "Ubuntu CVE Tracker",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724"
+        }
+      ],
+      "creationTime": "2020-09-10T10:04:23.812730Z",
+      "modificationTime": "2022-02-07T14:20:38.680054Z",
+      "publicationTime": "2020-04-13T21:52:24.585482Z",
+      "disclosureTime": "2020-04-12T21:15:00Z",
+      "id": "SNYK-UBUNTU2004-NGINX-579011",
+      "malicious": false,
+      "nvdSeverity": "high",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "nginx@1.18.0-0ubuntu1.2",
+        "nginx/nginx-core@1.18.0-0ubuntu1.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "nginx/nginx-core",
+      "version": "1.18.0-0ubuntu1.2",
+      "dockerfileInstruction": "apt-get install -y nginx",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "HTTP Request Smuggling",
+      "credit": [
+        ""
+      ],
+      "packageName": "nginx",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `nginx` package._\n\nAn issue was discovered in OpenResty before 1.15.8.4. ngx_http_lua_subrequest.c allows HTTP request smuggling, as demonstrated by the ngx.location.capture API.\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `nginx`.\n## References\n- [CONFIRM](https://security.netapp.com/advisory/ntap-20210129-0002/)\n- [DEBIAN](https://www.debian.org/security/2020/dsa-4750)\n- [Debian Security Tracker](https://security-tracker.debian.org/tracker/CVE-2020-11724)\n- [MISC](https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa)\n- [MISC](https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html)\n- [Ubuntu CVE Tracker](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2020-11724"
+        ],
+        "CWE": [
+          "CWE-444"
+        ]
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 7.5,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "patches": [],
+      "references": [
+        {
+          "title": "CONFIRM",
+          "url": "https://security.netapp.com/advisory/ntap-20210129-0002/"
+        },
+        {
+          "title": "DEBIAN",
+          "url": "https://www.debian.org/security/2020/dsa-4750"
+        },
+        {
+          "title": "Debian Security Tracker",
+          "url": "https://security-tracker.debian.org/tracker/CVE-2020-11724"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/lua-nginx-module/commit/9ab38e8ee35fc08a57636b1b6190dca70b0076fa"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/openresty/openresty/blob/4e8b4c395f842a078e429c80dd063b2323999957/patches/ngx_http_lua-0.10.15-fix_location_capture_content_length_chunked.patch"
+        },
+        {
+          "title": "MLIST",
+          "url": "https://lists.debian.org/debian-lts-announce/2020/07/msg00014.html"
+        },
+        {
+          "title": "Ubuntu CVE Tracker",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-11724"
+        }
+      ],
+      "creationTime": "2020-09-10T10:04:23.812730Z",
+      "modificationTime": "2022-02-07T14:20:38.680054Z",
+      "publicationTime": "2020-04-13T21:52:24.585482Z",
+      "disclosureTime": "2020-04-12T21:15:00Z",
+      "id": "SNYK-UBUNTU2004-NGINX-579011",
+      "malicious": false,
+      "nvdSeverity": "high",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "nginx@1.18.0-0ubuntu1.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "nginx",
+      "version": "1.18.0-0ubuntu1.2",
+      "dockerfileInstruction": "apt-get install -y nginx",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "Improper Verification of Cryptographic Signature",
+      "credit": [
+        ""
+      ],
+      "packageName": "perl",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `perl` package._\n\nCPAN 2.28 allows Signature Verification Bypass.\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `perl`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-16156)\n- [MISC](https://metacpan.org/pod/distribution/CPAN/scripts/cpan)\n- [MISC](https://blog.hackeriet.no/cpan-signature-verification-vulnerabilities/)\n- [MISC](http://blogs.perl.org/users/neilb/2021/11/addressing-cpan-vulnerabilities-related-to-checksums.html)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SZ32AJIV4RHJMLWLU5QULGKMMIHYOMDC/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SD6RYOJII7HRJ6WVORFNVTYNOFY5JDXN/)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2020-16156"
+        ],
+        "CWE": []
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 7.8,
+      "CVSSv3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "patches": [],
+      "references": [
+        {
+          "title": "ADVISORY",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2020-16156"
+        },
+        {
+          "title": "MISC",
+          "url": "https://metacpan.org/pod/distribution/CPAN/scripts/cpan"
+        },
+        {
+          "title": "MISC",
+          "url": "https://blog.hackeriet.no/cpan-signature-verification-vulnerabilities/"
+        },
+        {
+          "title": "MISC",
+          "url": "http://blogs.perl.org/users/neilb/2021/11/addressing-cpan-vulnerabilities-related-to-checksums.html"
+        },
+        {
+          "title": "FEDORA",
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SZ32AJIV4RHJMLWLU5QULGKMMIHYOMDC/"
+        },
+        {
+          "title": "FEDORA",
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/SD6RYOJII7HRJ6WVORFNVTYNOFY5JDXN/"
+        }
+      ],
+      "creationTime": "2021-11-25T16:02:37.608162Z",
+      "modificationTime": "2022-02-07T14:16:35.446795Z",
+      "publicationTime": "2021-11-25T16:02:37.595342Z",
+      "disclosureTime": "2021-12-13T18:15:00Z",
+      "id": "SNYK-UBUNTU2004-PERL-1930907",
+      "malicious": false,
+      "nvdSeverity": "high",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "meta-common-packages@meta",
+        "perl/perl-base@5.30.0-9ubuntu0.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "perl/perl-base",
+      "version": "5.30.0-9ubuntu0.2",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "Reachable Assertion",
+      "credit": [
+        ""
+      ],
+      "packageName": "tiff",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `tiff` package._\n\nReachable Assertion in tiffcp in libtiff 4.3.0 allows attackers to cause a denial-of-service via a crafted tiff file. For users that compile libtiff from sources, the fix is available with commit 5e180045.\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `tiff`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-0865)\n- [MISC](https://gitlab.com/libtiff/libtiff/-/issues/385)\n- [MISC](https://gitlab.com/libtiff/libtiff/-/merge_requests/306)\n- [CONFIRM](https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-0865.json)\n- [DEBIAN](https://www.debian.org/security/2022/dsa-5108)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZQ4E654ZYUUUQNBKYQFXNK2CV3CPWTM2/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNT2GFNRLOMKJ5KXM6JIHKBNBFDVZPD3/)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2022-0865"
+        ],
+        "CWE": []
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 6.5,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+      "patches": [],
+      "references": [
+        {
+          "title": "ADVISORY",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-0865"
+        },
+        {
+          "title": "MISC",
+          "url": "https://gitlab.com/libtiff/libtiff/-/issues/385"
+        },
+        {
+          "title": "MISC",
+          "url": "https://gitlab.com/libtiff/libtiff/-/merge_requests/306"
+        },
+        {
+          "title": "CONFIRM",
+          "url": "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-0865.json"
+        },
+        {
+          "title": "DEBIAN",
+          "url": "https://www.debian.org/security/2022/dsa-5108"
+        },
+        {
+          "title": "FEDORA",
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZQ4E654ZYUUUQNBKYQFXNK2CV3CPWTM2/"
+        },
+        {
+          "title": "FEDORA",
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNT2GFNRLOMKJ5KXM6JIHKBNBFDVZPD3/"
+        }
+      ],
+      "creationTime": "2022-03-09T02:34:54.416492Z",
+      "modificationTime": "2022-03-17T14:37:53.972920Z",
+      "publicationTime": "2022-03-09T02:34:54.347359Z",
+      "disclosureTime": "2022-03-10T17:44:00Z",
+      "id": "SNYK-UBUNTU2004-TIFF-2419481",
+      "malicious": false,
+      "nvdSeverity": "medium",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "nginx@1.18.0-0ubuntu1.2",
+        "nginx/nginx-core@1.18.0-0ubuntu1.2",
+        "nginx/libnginx-mod-http-image-filter@1.18.0-0ubuntu1.2",
+        "libgd2/libgd3@2.2.5-5.2ubuntu2.1",
+        "tiff/libtiff5@4.1.0+git191117-2ubuntu0.20.04.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "tiff/libtiff5",
+      "version": "4.1.0+git191117-2ubuntu0.20.04.2",
+      "dockerfileInstruction": "apt-get install -y nginx",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "Out-of-bounds Write",
+      "credit": [
+        ""
+      ],
+      "packageName": "tiff",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `tiff` package._\n\nA heap buffer overflow in ExtractImageSection function in tiffcrop.c in libtiff library Version 4.3.0 allows attacker to trigger unsafe or out of bounds memory access via crafted TIFF image file which could result into application crash, potential information disclosure or any other context-dependent impact\n## Remediation\nThere is no fixed version for `Ubuntu:20.04` `tiff`.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-0891)\n- [CONFIRM](https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-0891.json)\n- [MISC](https://gitlab.com/freedesktop-sdk/mirrors/gitlab/libtiff/libtiff/-/commit/232282fd8f9c21eefe8d2d2b96cdbbb172fe7b7c)\n- [MISC](https://gitlab.com/libtiff/libtiff/-/issues/382)\n- [MISC](https://gitlab.com/libtiff/libtiff/-/issues/380)\n- [DEBIAN](https://www.debian.org/security/2022/dsa-5108)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZQ4E654ZYUUUQNBKYQFXNK2CV3CPWTM2/)\n- [FEDORA](https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNT2GFNRLOMKJ5KXM6JIHKBNBFDVZPD3/)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2022-0891"
+        ],
+        "CWE": []
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 7.1,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+      "patches": [],
+      "references": [
+        {
+          "title": "ADVISORY",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2022-0891"
+        },
+        {
+          "title": "CONFIRM",
+          "url": "https://gitlab.com/gitlab-org/cves/-/blob/master/2022/CVE-2022-0891.json"
+        },
+        {
+          "title": "MISC",
+          "url": "https://gitlab.com/freedesktop-sdk/mirrors/gitlab/libtiff/libtiff/-/commit/232282fd8f9c21eefe8d2d2b96cdbbb172fe7b7c"
+        },
+        {
+          "title": "MISC",
+          "url": "https://gitlab.com/libtiff/libtiff/-/issues/382"
+        },
+        {
+          "title": "MISC",
+          "url": "https://gitlab.com/libtiff/libtiff/-/issues/380"
+        },
+        {
+          "title": "DEBIAN",
+          "url": "https://www.debian.org/security/2022/dsa-5108"
+        },
+        {
+          "title": "FEDORA",
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZQ4E654ZYUUUQNBKYQFXNK2CV3CPWTM2/"
+        },
+        {
+          "title": "FEDORA",
+          "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/RNT2GFNRLOMKJ5KXM6JIHKBNBFDVZPD3/"
+        }
+      ],
+      "creationTime": "2022-03-12T02:35:01.561894Z",
+      "modificationTime": "2022-03-17T14:39:35.759952Z",
+      "publicationTime": "2022-03-12T02:35:01.543359Z",
+      "disclosureTime": "2022-03-10T17:44:00Z",
+      "id": "SNYK-UBUNTU2004-TIFF-2421456",
+      "malicious": false,
+      "nvdSeverity": "high",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "*"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "nginx@1.18.0-0ubuntu1.2",
+        "nginx/nginx-core@1.18.0-0ubuntu1.2",
+        "nginx/libnginx-mod-http-image-filter@1.18.0-0ubuntu1.2",
+        "libgd2/libgd3@2.2.5-5.2ubuntu2.1",
+        "tiff/libtiff5@4.1.0+git191117-2ubuntu0.20.04.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "tiff/libtiff5",
+      "version": "4.1.0+git191117-2ubuntu0.20.04.2",
+      "dockerfileInstruction": "apt-get install -y nginx",
+      "dockerBaseImage": "ubuntu:20.04"
+    },
+    {
+      "title": "Out-of-bounds Write",
+      "credit": [
+        ""
+      ],
+      "packageName": "zlib",
+      "language": "linux",
+      "packageManager": "ubuntu:20.04",
+      "description": "## NVD Description\n**_Note:_** _Versions mentioned in the description apply to the upstream `zlib` package._\n_See `How to fix?` for `Ubuntu:20.04` relevant versions._\n\nzlib before 1.2.12 allows memory corruption when deflating (i.e., when compressing) if the input has many distant matches.\n## Remediation\nUpgrade `Ubuntu:20.04` `zlib` to version 1:1.2.11.dfsg-2ubuntu1.3 or higher.\n## References\n- [ADVISORY](http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-25032)\n- [MISC](https://www.openwall.com/lists/oss-security/2022/03/24/1)\n- [MISC](https://github.com/madler/zlib/commit/5c44459c3b28a9bd3283aaceab7c615f8020c531)\n- [MLIST](http://www.openwall.com/lists/oss-security/2022/03/25/2)\n- [MLIST](http://www.openwall.com/lists/oss-security/2022/03/26/1)\n- [MISC](https://www.openwall.com/lists/oss-security/2022/03/28/1)\n- [CONFIRM](https://github.com/madler/zlib/compare/v1.2.11...v1.2.12)\n- [MISC](https://www.openwall.com/lists/oss-security/2022/03/28/3)\n- [MISC](https://github.com/madler/zlib/issues/605)\n- [DEBIAN](https://www.debian.org/security/2022/dsa-5111)\n- [MLIST](https://lists.debian.org/debian-lts-announce/2022/04/msg00000.html)\n",
+      "identifiers": {
+        "ALTERNATIVE": [],
+        "CVE": [
+          "CVE-2018-25032"
+        ],
+        "CWE": []
+      },
+      "severity": "medium",
+      "socialTrendAlert": false,
+      "cvssScore": 7.5,
+      "CVSSv3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "patches": [],
+      "references": [
+        {
+          "title": "ADVISORY",
+          "url": "http://people.ubuntu.com/~ubuntu-security/cve/CVE-2018-25032"
+        },
+        {
+          "title": "MISC",
+          "url": "https://www.openwall.com/lists/oss-security/2022/03/24/1"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/madler/zlib/commit/5c44459c3b28a9bd3283aaceab7c615f8020c531"
+        },
+        {
+          "title": "MLIST",
+          "url": "http://www.openwall.com/lists/oss-security/2022/03/25/2"
+        },
+        {
+          "title": "MLIST",
+          "url": "http://www.openwall.com/lists/oss-security/2022/03/26/1"
+        },
+        {
+          "title": "MISC",
+          "url": "https://www.openwall.com/lists/oss-security/2022/03/28/1"
+        },
+        {
+          "title": "CONFIRM",
+          "url": "https://github.com/madler/zlib/compare/v1.2.11...v1.2.12"
+        },
+        {
+          "title": "MISC",
+          "url": "https://www.openwall.com/lists/oss-security/2022/03/28/3"
+        },
+        {
+          "title": "MISC",
+          "url": "https://github.com/madler/zlib/issues/605"
+        },
+        {
+          "title": "DEBIAN",
+          "url": "https://www.debian.org/security/2022/dsa-5111"
+        },
+        {
+          "title": "MLIST",
+          "url": "https://lists.debian.org/debian-lts-announce/2022/04/msg00000.html"
+        }
+      ],
+      "creationTime": "2022-03-25T14:37:52.004135Z",
+      "modificationTime": "2022-03-31T14:50:12.242580Z",
+      "publicationTime": "2022-03-25T14:37:51.984003Z",
+      "disclosureTime": "2022-03-25T09:15:00Z",
+      "id": "SNYK-UBUNTU2004-ZLIB-2433592",
+      "malicious": false,
+      "nvdSeverity": "high",
+      "relativeImportance": "medium",
+      "semver": {
+        "vulnerable": [
+          "<1:1.2.11.dfsg-2ubuntu1.3"
+        ]
+      },
+      "exploit": "Not Defined",
+      "severityWithCritical": "medium",
+      "from": [
+        "docker-image|proxy@latest",
+        "meta-common-packages@meta",
+        "zlib/zlib1g@1:1.2.11.dfsg-2ubuntu1.2"
+      ],
+      "upgradePath": [],
+      "isUpgradable": false,
+      "isPatchable": false,
+      "name": "zlib/zlib1g",
+      "version": "1:1.2.11.dfsg-2ubuntu1.2",
+      "nearestFixedInVersion": "1:1.2.11.dfsg-2ubuntu1.3",
+      "dockerBaseImage": "ubuntu:20.04"
+    }
+  ],
+  "ok": false,
+  "dependencyCount": 137,
+  "org": "silvduck",
+  "policy": "# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.\nversion: v1.22.1\nignore: {}\npatch: {}\n",
+  "isPrivate": true,
+  "licensesPolicy": {
+    "severities": {},
+    "orgLicenseRules": {
+      "AGPL-1.0": {
+        "licenseType": "AGPL-1.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "AGPL-3.0": {
+        "licenseType": "AGPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "Artistic-1.0": {
+        "licenseType": "Artistic-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "Artistic-2.0": {
+        "licenseType": "Artistic-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CDDL-1.0": {
+        "licenseType": "CDDL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "CPOL-1.02": {
+        "licenseType": "CPOL-1.02",
+        "severity": "high",
+        "instructions": ""
+      },
+      "EPL-1.0": {
+        "licenseType": "EPL-1.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "GPL-2.0": {
+        "licenseType": "GPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "GPL-3.0": {
+        "licenseType": "GPL-3.0",
+        "severity": "high",
+        "instructions": ""
+      },
+      "LGPL-2.0": {
+        "licenseType": "LGPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-2.1": {
+        "licenseType": "LGPL-2.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "LGPL-3.0": {
+        "licenseType": "LGPL-3.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-1.1": {
+        "licenseType": "MPL-1.1",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MPL-2.0": {
+        "licenseType": "MPL-2.0",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "MS-RL": {
+        "licenseType": "MS-RL",
+        "severity": "medium",
+        "instructions": ""
+      },
+      "SimPL-2.0": {
+        "licenseType": "SimPL-2.0",
+        "severity": "high",
+        "instructions": ""
+      }
+    }
+  },
+  "packageManager": "deb",
+  "ignoreSettings": null,
+  "docker": {
+    "baseImage": "ubuntu:20.04",
+    "baseImageRemediation": {
+      "code": "OUTDATED_BASE_IMAGE",
+      "baseImageOutdated": true,
+      "advice": [
+        {
+          "message": "Your base image is out of date",
+          "bold": true
+        },
+        {
+          "message": "1) Pull the latest version of your base image by running 'docker pull ubuntu:20.04'"
+        },
+        {
+          "message": "2) Rebuild your local image"
+        }
+      ]
+    }
+  },
+  "summary": "16 medium or high or critical severity vulnerable dependency paths",
+  "severityThreshold": "medium",
+  "filesystemPolicy": false,
+  "filtered": {
+    "ignore": [],
+    "patch": []
+  },
+  "uniqueCount": 6,
+  "projectName": "docker-image|proxy",
+  "platform": "linux/amd64",
+  "path": "proxy:latest"
+}
